@@ -1,25 +1,25 @@
-/* VARIABLES CSS */
+/* Variables  */
 
 :root {
   --header-height: 3rem;
 
   /* Colors */
   /* main color */
-  --hue-color: 0;
+  --hue: 0;
 
   /* HSL Color mode */
-  --first-color: hsl(var(--hue-color), 69%, 61%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
-  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --title-color: hsl(var(--hue-color), 8%, 15%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
-  --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: hsl(var(--hue-color), 60%, 0%);
+  --first-color: hsl(var(--hue), 69%, 61%);
+  --first-color-second: hsl(var(--hue), 69%, 61%);
+  --first-color-alt: hsl(var(--hue), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue), 92%, 85%);
+  --title-color: hsl(var(--hue), 8%, 15%);
+  --text-color: hsl(var(--hue), 8%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 65%);
+  --input-color: hsl(var(--hue), 70%, 96%);
+  --body-color: hsl(var(--hue), 60%, 0%);
   --container-color: #ffffff;
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --scroll-bar-color: hsl(var(--hue), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue), 12%, 80%);
 
   /* Font and typography */
   --heading-font: "Source Code Pro", monospace;
@@ -83,6 +83,7 @@ h4 {
 }
 ul {
   list-style: none;
+  
 }
 a {
   text-decoration: none;
@@ -90,8 +91,25 @@ a {
 
 }
 img {
-  /* max-width: 100%; */
+  max-width: 100%;
   height: auto;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+nav {
+    max-width: 100vw;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* nav image */
@@ -99,6 +117,20 @@ img {
     display: inline-flex;
 }
 
+.navbar__list {
+    display: inline-flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.navbar__items {
+    display: inline-flex;
+    flex-direction: column;
+    /* align-items: ; */
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
 
 /* Fonts */
 .courier-prime-bold {
