@@ -1,0 +1,68 @@
+ html, body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+  }
+  
+  body {
+    overflow: hidden;
+    height: inherit;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    position: absolute;
+    margin: 0;
+    top: -1px;
+    right: 5px;
+  
+    color: transparent;
+    text-shadow: 0 0 4px white;
+  }
+
+  p {
+    position: absolute;
+    margin: 0;
+    top: 35px;
+    right: 5px;
+    color: #aaa;
+  }
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 260px;
+    background: black;
+  }
+  h4 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    background-position: center;
+      
+    color: transparent;
+    text-shadow: 0 0 4px whitesmoke;
+  } 
+  #info {
+    position: absolute;
+    margin: 0;
+    top: 5px;
+    left: 7px;
+    color: #aaa;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+  
+  

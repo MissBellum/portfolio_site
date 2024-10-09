@@ -1,0 +1,219 @@
+* {
+    color: #ffffff;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    font: normal normal 300 16px/1.5 "Courier Prime", sans-serif;
+    background: linear-gradient(to bottom, #000000, #000000,#111111, #222222);
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    overflow: hidden;
+}
+
+section {
+    justify-content: space-around;
+    width: 70%;
+    flex-direction: row;
+    position: absolute;
+    top: 11%;
+    left: 10%; 
+    font: normal normal 300 16px/1.5 "Source Code Pro", sans-serif;
+}
+
+section > div {
+    width: 50vw;
+    height: 20vh;
+}
+
+a, h1, h5, footer {
+    font: normal normal 600 0.9em "Courier Prime", sans-serif;
+}
+
+h5 {
+    margin : 3.5em;
+    text-decoration: underline;
+    justify-items: left;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    border-top: 2px solid #ffffff;
+}
+
+/* Nav bar */
+.nav-bar {
+    border-bottom: 2px solid #ffffff;
+    max-width: 100vw; 
+}
+
+.nav-brand {
+    border-radius: 5px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    max-width: 100vw;
+    margin: 0 auto; 
+}
+
+.navbar-item:hover {
+    background-color: #fbbdc3;
+    border-radius: 5px; 
+    color: #000;
+}
+
+a.navbar-item {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    padding: 7px 10px; 
+    transition: color 0.5s;
+}
+
+/* Home page */
+.welcome {
+    font-size: 2.55rem;
+}
+
+#intro {
+    width: 25em;
+    word-spacing: 0.5em;
+    text-align: justify;
+    font: normal normal 400 1em "Source Code Pro", sans-serif;
+}
+
+.page-content {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+
+/* Date */
+.date-font {
+    font-size: 0.5em;
+}
+
+/* Fancy stuff */
+i:hover {
+    color: #fbbdc3;
+}
+
+.entertainment {
+    position: absolute;
+    bottom: 35px;
+    right: 10%;
+    text-decoration: underline;
+}
+
+.portal {
+    width: 20%;
+    height: 8%;
+    background-color: rgba(39, 248, 2, 0.989);
+    border-radius: 100%;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 1), 0 0 40px rgba(57, 255, 20, 0.7);
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Project page */
+.projects {
+    width: 95vw;
+    flex-direction: row-reverse;
+    display: flex;
+    margin: 1em 2em;
+}
+
+.project-div {
+    width: 27%;
+    margin: 1.5em;
+}
+
+.project-img {
+    width: 9em;
+    height: 8em;
+    border-radius: 10px;
+}
+
+/* Lists */
+li, p {
+    font: normal normal 300 0.9em "Source Code Pro", sans-serif;
+    list-style: square;
+}
+
+.stack-div {
+    display: inline-flex;
+    width: 50%;
+}
+
+ul.backend {
+    margin-left: 15px;
+}
+ul.database {
+    margin-left: 13px;
+}
+
+/* Animations */
+.fade-text {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.moving-div {
+    position: relative;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Fonts */
+.courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.source-code-pro {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
